@@ -11,7 +11,7 @@ public class UserService {
     @Autowired
     private KafkaTemplate<String, User> kafkaUserTemplate;
 
-    private final static String TOPIC = "user-topic-demo";
+    private final static String TOPIC = "user-topic-transform-data";
 
     public String produceMessage(User user){
         try{
